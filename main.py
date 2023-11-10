@@ -29,9 +29,10 @@ import aiopg
 # async def Errorecode(code):
 #     url = f"https://http.cat/{code}"
 #     async with aiohttp.ClientSession() as session:
-#         return code
-#
-#
+#         async with session.get(url) as response:
+#             return code
+# 
+# 
 # @pytest.mark.asyncio
 # async def event_loop():
 #     code = await Errorecode(102)
